@@ -1,0 +1,37 @@
+{
+    "interface_name": "com.astarte.Tester",
+    "version_major": 0,
+    "version_minor": 1,
+    "type": "datastream",
+    "ownership": "device",
+    "aggregation": "object",
+    "mappings": [
+        {
+            "endpoint": "/timestamp",
+            "type": "integer",
+            "reliability":"unique",
+            "retention":"volatile",
+            "expiry":60,
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 28800
+        },
+        {
+            "endpoint": "/counter",
+            "type": "integer",
+            "reliability":"unique",
+            "retention":"volatile",
+            "expiry":60,
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 28800
+        },
+        {
+            "endpoint": "/random",
+            "type": "integer",
+            "reliability":"unique",
+            "retention":"volatile",
+            "expiry":60,
+            "database_retention_policy": "use_ttl",
+            "database_retention_ttl": 28800
+        }
+    ]
+}
